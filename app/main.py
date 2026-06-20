@@ -147,7 +147,7 @@ def get_notification(
     return notification
 
 @app.put("/notifications/{notification_id}")
-def update_notification_status(
+def update_notification(
     notification_id: int,
     update: NotificationStatusUpdate,
     db: Session = Depends(get_db)
